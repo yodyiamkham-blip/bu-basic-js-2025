@@ -50,6 +50,40 @@
 
     <h2>Your solution for exercise</h2>
 
+
+
+    <input id="txtFirstname" type="text" placeholder="Enter first name"/>
+    <input id="txtLastname" type="text" placeholder="Enter last name"/>
+    <input id="btnAdd" type="button" value="Add"/>
+    <input id="btnResetInput" type="button" value="ResetInput" onclick="resetInputs();"/>
+    <input id="btnResetTable" type="button" value="ResetTable"/>
+
+    <table border="1" style="margin-top:10px;">
+        <thead>
+            <tr>
+                <th>First name</th>
+                <th>Last name</th>
+            </tr>
+        </thead>
+        <tbody id="tblBody">
+            <tr>
+                <td>John</td>
+                <td>Smith</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+       
+        function resetInputs(){
+            document.getElementById('txtFirstname').value = '';
+            document.getElementById('txtLastname').value = '';
+        }
+
+    </script>            
+                
+
+            
 </body>
 
 </html>
